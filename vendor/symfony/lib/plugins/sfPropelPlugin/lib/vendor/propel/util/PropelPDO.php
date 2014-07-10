@@ -233,6 +233,23 @@ class PropelPDO extends PDO {
 		}
 	}
 
+	public function eLOG($msg)
+	{
+		$time = new DateTime;
+		$time->setTimezone(new DateTimeZone('Europe/Berlin'));
+		$now = $time->format('Y-m-d H:i:s T');
+
+		$referer = "(no referer)";
+		if (isset($_SERVER['HTTP_REFERER'])) {
+			$referer = $_SERVER['HTTP_REFERER'];
+		}
+		$line = "[" . $now . "] " . $msg . " (referer: <" . $referer . ">)\n";
+
+		$log = $_SERVER["DOCUMENT_ROOT"] . "/sql.log";
+
+		error_log($line, 3, $log);
+	}
+
 	/**
 	 * Overrides PDO::prepare() to add query caching support if the
 	 * PropelPDO::PROPEL_ATTR_CACHE_PREPARES was set to true.
@@ -243,6 +260,7 @@ class PropelPDO extends PDO {
 	 */
 	public function prepare($sql, $driver_options = array())
 	{
+		$this->eLOG("prepare {" . $sql . "}");
 		if ($this->cachePreparedStatements) {
 			$key = $sql;
 			if (!isset($this->preparedStatements[$key])) {
@@ -265,4 +283,25 @@ class PropelPDO extends PDO {
 		$this->preparedStatements = array();
 	}
 
+	public function exec($sql)
+	{
+		$this->eLOG("exec {" . $sql . "}");
+		$return	= parent::exec($sql);
+
+		return $return;
+	}
+
+	public function query()
+	{
+		$args	= func_get_args();
+		$this->eLOG("query {" . $args . "}");
+
+		if (version_compare(PHP_VERSION, '5.3', '<')) {
+			$return	= call_user_func_array(array($this, 'parent::query'), $args);
+		} else {
+			$return	= call_user_func_array('parent::query', $args);
+		}
+
+		return $return;
+	}
 }
