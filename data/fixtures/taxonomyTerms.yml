@@ -8447,6 +8447,14 @@ QubitTerm:
       th: ที่ไม่รู้
       vi: 'Không biết'
       zh: 未知的
+  QubitTerm_template_mea:
+    taxonomy_id: 70
+    parent_id: QubitTerm_110
+    source_culture: en
+    code: mea
+    name:
+      de: 'MEA'
+      en: 'MEA, inspired by ISAD(G), 2nd ed.'
   QubitTerm_template_isad:
     taxonomy_id: 70
     parent_id: QubitTerm_110

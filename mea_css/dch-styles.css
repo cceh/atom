@@ -1,0 +1,298 @@
+@media screen {
+    body {
+        background:#EBEFF5;
+        font-family:'Istok Web', arial, helvetica, sans-serif;
+    }
+    
+    /* uni blau */
+    /* body {background:#6090AE} */
+    
+    /* Header Section */
+    
+    #headerSection {
+        position:relative;
+        min-height:125px;
+        background: url('http://verwaltung.uni-koeln.de/common/skyline.png') no-repeat right bottom #FFFFFF;
+        border-bottom-right-radius:1em;
+    }
+    
+    #metaNavigation {
+        height:2.75em;
+        color:#428bca;
+    }
+    #languageSwitch {
+        float:right;
+        line-height:2.75em;
+    }
+    #languageSwitch li a {
+        font-size:85%;
+    }
+    #mainLogo {
+        background-image: url("images/UzK_Logo.png");
+        height: 62px;
+        left: 30px;
+        position: absolute;
+        top: 2.75em;
+        width: 120px;
+    }
+    #mainLogo a {
+        float:left
+    }
+    #mainLogo a span {
+        display:none;
+    }
+    
+    #mainHeading {
+        margin-left:170px;
+        margin-top:15px;
+        position:relative;
+    }
+    #headerSection #mainHeading h1 {
+        font-size:125%;
+        color:#41799E;
+        margin:0;
+        line-height:1.3em;
+        text-transform:uppercase;
+    }
+    #headerSection .sub-header {
+        font-size:13px;
+    }
+    /* Typo Section */
+    .heading {
+        font-family:'Istok Web',arial, helvetica, sans-serif;
+    }
+    #headerSection h1, #headerSection h2, #headerSection h3, #headerSection h4, #headerSection h5, #headerSection h6 {
+        text-transform:uppercase;
+        font-weight:700;
+        color:#8f8f8f;
+    }
+    #headerSection h1, #headerSection h2, #headerSection h3 {
+        font-size:133%;
+    }
+    
+    /* navi Container (neues Menü) */
+    
+    #secLogo {
+        position:absolute;
+        left:30px;
+        top:2.5em;
+        margin:0;
+        height:40px;
+        background:transparent;
+        text-align:center;
+        line-height:40px;
+    }
+    
+    #navContainer {
+        padding:48px 0 36px 0;
+        position:relative;
+    }
+    #navContainer ul,
+    #navContainer ul li {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    #navContainer ul#main-topics {
+        margin:0;
+        padding-left:364px;
+        width:auto;
+    }
+    #navContainer ul.list-inline li.main-item {
+        line-height:1em;
+        padding:0;
+        width:200px;
+        overflow:hidden;
+        float:left;
+    }
+    #navContainer li.main-item div.main-item-inner {
+        border-left:1px solid #ced8db;
+        float:left;
+        width:auto;
+    }
+    #navContainer li.main-item div.main-item-inner a.main-item-link {
+        display:block;
+        line-height:36px;
+        text-transform:uppercase;
+        font-size:100%;
+    }
+    #navContainer ul li:hover,
+    #navContainer ul li:focus,
+    #navContainer ul li:active{
+    }
+    #navContainer ul li.active {
+    }
+    #navContainer ul li a {
+        cursor:pointer;
+        color:#444;
+        display:block;
+        font-weight:normal;
+        padding:0 10px;
+    }
+    #navContainer ul li a:hover {
+        text-decoration:none;
+        color:#fff;
+        background-color:#444;
+        
+    }
+    #navContainer ul li a span {
+        display:block;
+        font-size:0.65em;
+        color:#7b7b7b;
+        line-height:1em;
+        font-weight:normal;
+    }
+    #navContainer ul li a:hover span {
+        color:#444;
+    }
+    
+    #navContainer ul.sub-topics,
+    #navContainer ul.sub-topics li{
+        float:left;
+        width:100%;
+        text-align:left;
+    }
+    
+    #navContainer ul.sub-topics li a{
+        font-size:92%;
+    }
+    
+    /* navi Section*/
+    #naviSection {
+        height:10em;
+        display:none;
+    }
+    #naviSection ul {
+        margin:0;
+    }
+    #naviSection ul li {
+        line-height:2.5em;
+        border-top:0.33em solid transparent;
+    }
+    #naviSection ul li:hover,
+    #naviSection ul li:focus,
+    #naviSection ul li:active{
+        border-top-color:#8f8f8f;
+    }
+    #naviSection ul li.active {
+        border-top-color:#923d90;
+    }
+    #naviSection ul li a {
+    }
+    #naviSection ul li a:hover {
+        text-decoration:none;
+    }
+    
+    /* content Section */
+    /* padding der Columns aufheben */
+    
+    #contentSection {
+        padding-left:0;
+        padding-right:0;
+        background:#fff;
+    }
+    /*
+    #contentCol3 {
+        background:url('./images/DCH_Logo_175.png') no-repeat top right #FFFFFF;
+        padding-top:97px;
+    }
+    */
+    
+    .contentHeader {
+       padding:0.35em 0.05em 0.3em;
+       color:#444;
+    }
+    .contentHeader h2 {
+    
+    }
+    
+    /* Col 1 (Marginal 1) */    
+    
+    /* Col 2 (Content) */
+    
+    #contentCol2 p {
+        font-size:105%;
+    }
+    
+    /* Col 3 (Marginal 2)*/
+
+    
+    /* Footer */
+    #footerSection {
+        margin-top:1em;
+    }
+    
+    /* WP widget (recent entries) */
+    .widget ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+        line-height:1.5em;
+    }
+    .widget ul li {
+        
+    }
+
+    /*
+     * Anpassungen auf Viewport
+     */
+     
+    /* reset */
+    @media (min-width:0px) {
+        #headerSection {
+            background-image:url();
+            border-radius:0;
+        }
+        #mainLogo {
+            background:0 none;
+            line-height:2.9em;
+            top:0;
+            left:15px;
+        }
+        #mainLogo a img {
+            display:none;
+        }
+        #mainLogo a span {
+            display:block;
+        }
+        #mainHeading {
+            margin-left:0;
+        }
+        .container {
+            min-width:400px;
+        }
+    }
+     
+    /* Uni Köln Logo im Headerbereich soll nur angezeigt werden, wenn der Platz dafür reicht */
+    @media (min-width: 480px) {
+        #mainLogo {
+            display:block;
+            background-image: url("images/UzK_Logo.png");
+            left: 30px;
+            top: 2.75em;
+        }
+        #mainLogo a img {
+            display:block;
+        }
+        #mainLogo a span {
+            display:none;
+        }
+        #mainHeading {
+            margin-left:170px;
+        }
+    }
+    
+    /* abgerundete Ecke im Header erst, wenn der Header freisteht und nicht anliegt */
+    @media (min-width:768px) {
+        #headerSection {
+            border-bottom-right-radius:1em;
+        }
+    }
+     
+    /* Hintergrundbild im Headerbereich soll nur angezeigt werden, wenn der Platz dafür reicht */
+    @media (min-width: 992px) {
+        #headerSection {
+            background-image:url('http://verwaltung.uni-koeln.de/common/skyline.png');
+        }
+    }
+}

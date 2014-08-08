@@ -1,3 +1,6 @@
+<?php /*added by Bernhard*/ include '_uni_koeln_header.php' ?>
+<?php /*added by Bernhard*/ include '_mea_menu_latest.php' ?>
+
 <?php echo get_component('default', 'updateCheck') ?>
 
 <?php if ($sf_user->isAdministrator() && (string)QubitSetting::getByName('siteBaseUrl') === ''): ?>
@@ -6,8 +9,9 @@
   </div>
 <?php endif; ?>
 
-<header id="top-bar">
+<header id="top-bar" class="container">
 
+<?php /* Bernhard says: We don't want the AtoM-Logo in the top-bar!
   <?php if (sfConfig::get('app_toggleLogo')): ?>
     <?php echo link_to(image_tag('logo', array('alt' => 'AtoM')), '@homepage', array('id' => 'logo', 'rel' => 'home')) ?>
   <?php endif; ?>
@@ -17,8 +21,9 @@
       <?php echo link_to('<span>'.esc_specialchars(sfConfig::get('app_siteTitle')).'</span>', '@homepage', array('rel' => 'home', 'title' => __('Home'))) ?>
     </h1>
   <?php endif; ?>
+  */ ?>
 
-  <nav>
+  <nav class"navbar navbar-default">
 
     <?php echo get_component('menu', 'userMenu') ?>
 
@@ -48,6 +53,7 @@
 
 </header>
 
+<?php /*
 <?php if (sfConfig::get('app_toggleDescription')): ?>
   <div id="site-slogan">
     <div class="container">
@@ -59,3 +65,4 @@
     </div>
   </div>
 <?php endif; ?>
+*/ ?>

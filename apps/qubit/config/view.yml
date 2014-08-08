@@ -25,9 +25,13 @@ default:
     # graphic:
     # main:
     # print: { media: print, position: last }
+    /myCssBernhard.css: {media: all, position: first}
+    /mea_css/common.css: {media: all, position: first}
 
   javascripts:
     /vendor/jquery:
+    /mea_js/myJavascriptBernhard.js:
+    
     /plugins/sfDrupalPlugin/vendor/drupal/misc/drupal:
     /vendor/yui/yahoo-dom-event/yahoo-dom-event:
     /vendor/yui/element/element-min:

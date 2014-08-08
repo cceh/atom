@@ -48,5 +48,7 @@ class MenuMainMenuComponent extends sfComponent
     $this->manageMenu = QubitMenu::getById(QubitMenu::MANAGE_ID);
     $this->importMenu = QubitMenu::getById(QubitMenu::IMPORT_ID);
     $this->adminMenu = QubitMenu::getById(QubitMenu::ADMIN_ID);
+//Bernhard
+    $this->testMenu = QubitMenu::getById(QubitMenu::TEST_MENU_ID);
   }
 }
