@@ -9,6 +9,17 @@ homepage:
     action: home
     slug: home
 
+# ---------------Bernhard-------------------------------------------------------
+# nachfolgend weitere routing-Anweisungen
+# ---------------Bernhard ------------------------------------------------------
+
+mea:
+  url: /mea/add
+  param:
+    module: sfMeaPlugin
+    action: edit
+
+
 # --------------------------------------------------------- <QubitMetadataRoute>
 # QubitMetadataRoute objects will generate and match URL to integrate the
 # multiple metadata standards available.

@@ -79,6 +79,7 @@
     <echo>Compile css with less</echo>
     <exec command="make" dir="${phing.dir}/plugins/arDominionPlugin" checkreturn="true"/>
     <exec command="make" dir="${phing.dir}/plugins/arArchivesCanadaPlugin" checkreturn="true"/>
+    <exec command="make" dir="${phing.dir}/plugins/arMeaStylePlugin" checkreturn="true"/>
 
     <echo>Run symfony release task</echo>
     <exec command="php symfony release --no-confirmation ${package.version} stable" dir="${phing.dir}" checkreturn="true"/>

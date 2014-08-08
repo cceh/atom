@@ -21,3 +21,4 @@ all:
   stylesheets:
     -*:
     /plugins/arDominionPlugin/css/main.css:
+    /plugins/arMeaStylePlugin/css/min.css:

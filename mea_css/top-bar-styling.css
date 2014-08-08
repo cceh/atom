@@ -1,0 +1,15 @@
+@media screen {
+    #top-bar {
+        background-color:#888;
+    }
+    #search-bar #search-form-wrapper input {
+        background:#f1f1f1;
+        color:#222;
+        box-shadow: inset 0 0 0 0 5px;
+    }
+    #search-bar #browse-menu > a,
+    #top-bar #user-menu > a {
+        background:#666;
+        color:#fff;
+    }
+}
