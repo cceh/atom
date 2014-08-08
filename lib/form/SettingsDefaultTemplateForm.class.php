@@ -35,6 +35,10 @@ class SettingsDefaultTemplateForm extends sfForm
 
     $informationObjectTemplates = array();
 
+    if ($configuration->isPluginEnabled('sfMeaPlugin'))
+    {
+      $informationObjectTemplates['mea'] = __('MEA, inspired by ISAD(G), 2nd ed.');
+    }
     if ($configuration->isPluginEnabled('sfIsadPlugin'))
     {
       $informationObjectTemplates['isad'] = __('ISAD(G), 2nd ed. International Council on Archives');
