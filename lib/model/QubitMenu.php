@@ -35,6 +35,8 @@ class QubitMenu extends BaseMenu
     TRANSLATE_ID = 8,
     ADMIN_ID = 9,
     MANAGE_ID = 10,
+//Bernhard
+    TEST_MENU_ID = 999,
 
     // 4rd generation constant ids
     TAXONOMY_ID = 6;
@@ -100,7 +102,9 @@ class QubitMenu extends BaseMenu
       QubitMenu::MAIN_MENU_ID,
       QubitMenu::QUICK_LINKS_ID,
       QubitMenu::ADD_EDIT_ID,
-      QubitMenu::ADMIN_ID));
+      QubitMenu::ADMIN_ID,
+//Bernhard
+      QubitMenu::TEST_MENU_ID));
   }
 
   /**

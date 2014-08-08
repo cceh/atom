@@ -415,6 +415,7 @@ class sfInstall
     $object->value = serialize(array(
       'sfDcPlugin',
       'arDominionPlugin',
+      'arMeaStylePlugin',
       'sfEacPlugin',
       'sfEadPlugin',
       'sfIsaarPlugin',
