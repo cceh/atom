@@ -15,7 +15,7 @@
 	</div>
 	<div id="mainLogo">
 		<a href="http://www.uni-koeln.de">
-			<img src="/images/UzK_Logo.png" alt="Universität zu Köln" />
+			<?php echo image_tag('/images/UzK_Logo.png', 'alt="Universität zu Köln"') ?>	
 			<span class="hidden-text">Universität zu Köln</span>
 		</a>
 	</div>
