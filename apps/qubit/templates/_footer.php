@@ -10,6 +10,10 @@
     <?php echo __('Printed: %d%', array('%d%' => date('Y-m-d'))) ?>
   </div>
 
+  <div id="impressum" style="float: right;">
+    <a href="#">Impressum</a>
+  </div>
+
 </footer>
 
 <?php $gaKey = sfConfig::get('app_google_analytics_api_key', '') ?>

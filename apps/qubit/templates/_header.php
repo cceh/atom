@@ -1,5 +1,5 @@
 <?php /*added by Bernhard*/ include '_uni_koeln_header.php' ?>
-<?php /*added by Bernhard*/ include '_mea_menu_latest.php' ?>
+<?php /*added by Bernhard*/ include '_mea_menu.php' ?>
 
 <?php echo get_component('default', 'updateCheck') ?>
 
