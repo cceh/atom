@@ -920,6 +920,7 @@
       </trans-unit>
       <trans-unit id="56b1b4ae2973d57bb6522d81dd4f6a944302bfd6">
         <source>General note(s)</source>
+        <target>Bemerkung(en)</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/settings/templates/visibleElementsSuccess.php</note>
       </trans-unit>
       <trans-unit id="5f1184f7df96c5928092ad9c6b550699bf887826">

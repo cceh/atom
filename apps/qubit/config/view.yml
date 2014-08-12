@@ -23,14 +23,13 @@ default:
     # /plugins/sfDrupalPlugin/vendor/drupal/themes/garland/print: { media: print, position: first }
     # form:
     # graphic:
-    # main:
+    # main:+
     # print: { media: print, position: last }
-    /myCssBernhard.css: {media: all, position: first}
-    /mea_css/common.css: {media: all, position: first}
+    #/mea_css/common.css: {media: all, position: first}
 
   javascripts:
     /vendor/jquery:
-    /mea_js/myJavascriptBernhard.js:
+    /plugins/arMeaStylePlugin/js/javascriptMEA.js:
     
     /plugins/sfDrupalPlugin/vendor/drupal/misc/drupal:
     /vendor/yui/yahoo-dom-event/yahoo-dom-event:

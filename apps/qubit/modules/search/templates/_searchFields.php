@@ -31,6 +31,8 @@
               <option value="place"<?php echo $item['field'] == 'place' ? ' selected="selected"' : '' ?>><?php echo __('Place access points') ?></option>
               <option value="identifier"<?php echo $item['field'] == 'identifier' ? ' selected="selected"' : '' ?>><?php echo __('Identifier') ?></option>
               <option value="referenceCode"<?php echo $item['field'] == 'referenceCode' ? ' selected="selected"' : '' ?>><?php echo __('Reference code') ?></option>
+              <?php /* Bernhard Search Note*/ ?>
+              <option value="note"<?php echo $item['field'] == 'note' ? 'selected="selected"' : '' ?>><?php echo __('General note(s)') ?></option>
             </select>
           </div>
         </div>
@@ -68,6 +70,9 @@
           <option value="place"><?php echo __('Place access points') ?></option>
           <option value="identifier"><?php echo __('Identifier') ?></option>
           <option value="referenceCode"><?php echo __('Reference code') ?></option>
+          <?php /* Bernhard Search Note */ ?>
+          <option value="note"><?php echo __('General note(s)') ?></option>
+
         </select>
       </div>
     </div>

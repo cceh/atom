@@ -15,14 +15,23 @@
  * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
  */
 
-@myBernhardTestColor: rgb(200, 130, 75);
-
 @topBarBackgroundColor: rgb(22, 21, 20);
 @topBarButtonHoverColor: @orange;
 
+.list-inline#languageSwitch {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline#languageSwitch > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 #top-bar {
   height: 50px;
-  background-color: @myBernhardTestColor;
+  background-color: @grayDarkLight;
 }
 
 header #logo {
@@ -308,6 +317,9 @@ nav > div {
   float: left;
 }
 
+#search-bar #browse-menu > a,#top-bar #user-menu > a {background:#666;color:#fff;}
+
+
 #search-bar #search-form-wrapper {
 
   // Use form to margin top
@@ -341,7 +353,7 @@ nav > div {
 
     &:focus {
       background-color: @graySilver;
-      color: @gray;
+      color: @grayLighte;
       .placeholder(@grayLight);
     }
 

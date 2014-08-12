@@ -1,7 +1,9 @@
 <div id="navContainer" class="container">
+
 	<div id="secLogo">
-		<img src="/images/MEA-Schriftzug-40.png" alt="DCH" />
+		<?php echo image_tag('/images/MEA-Schriftzug-40.png', 'alt="MEA Logo"') ?>		
 	</div>
+
 	<nav id="siteNavigation">
 		<ul class="list-inline" id="main-topics">
 			<li class="main-item">
@@ -31,7 +33,7 @@
 							<a href="#" class="menuItemLink">Geschichte</a>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Team</a>
+							<a href="#" class="menuItemLink">Team/Kontakt</a>
 						</li>
 						<li>
 							<a href="#" class="menuItemLink">Bestandsübersicht</a>

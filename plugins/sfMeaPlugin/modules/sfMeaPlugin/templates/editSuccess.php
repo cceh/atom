@@ -56,7 +56,7 @@
           ->renderRow() ?>
 
         <?php echo render_field($form->extentAndMedium //=umfang_und_materialitaet_b
-          ->label(__('Umfang und Materialität (Text)')), $resource) ?>
+          ->label(__('Umfang und MaterialitÃ¤t (Text)')), $resource) ?>
 
 
       </fieldset> <!-- /#identityArea --> 
@@ -83,7 +83,7 @@
 
         <?php echo render_field($form->acquisition //=letzter_eigentuemer_der_akten_b
           ->help(__('Record the source from which the unit of description was acquired and the date and/or method of acquisition if any or all of this information is not confidential. If the source is unknown, record that information. Optionally, add accession numbers or codes. (ISAD 3.2.4)'))
-          ->label(__('Letzter Eigentümer der Akten')), $resource, array('class' => 'resizable')) ?>
+          ->label(__('Letzter EigentÃ¼mer der Akten')), $resource, array('class' => 'resizable')) ?>
 
       </fieldset> <!-- /#contextArea -->
 
@@ -110,11 +110,11 @@
 
         <?php echo $form->language //=sprache_des_schriftstuecks_b
           ->help(__('Record the language(s) of the materials comprising the unit of description. (ISAD 3.4.3)'))
-          ->label(__('Sprache des Schriftstücks'))
+          ->label(__('Sprache des SchriftstÃ¼cks'))
           ->renderRow(array('class' => 'form-autocomplete')) ?>
 
         <?php /* echo render_field($form->sprache_des_schriftstuecks_b
-          ->label(__('Sprache des Schriftstücks')), $resource) */ ?>
+          ->label(__('Sprache des SchriftstÃ¼cks')), $resource) */ ?>
 
       </fieldset> <!-- /#conditionsOfAccessAndUseArea -->
 
@@ -125,7 +125,7 @@
           ->help(__('Record information about units of description in the same repository or elsewhere that are related by provenance or other association(s). Use appropriate introductory wording and explain the nature of the relationship . If the related unit of description is a finding aid, use the finding aids element of description (3.4.5) to make the reference to it. (ISAD 3.5.3)'))
           ->label(__('Verwandte Verzeichnungseinheiten')), $resource, array('class' => 'resizable')) ?>
 
-        <!-- //=veroeffentlichungen_sekundaerliteratur_b | Veröffentlichungen/Sekundärliteratur -->
+        <!-- //=veroeffentlichungen_sekundaerliteratur_b | VerÃ¶ffentlichungen/SekundÃ¤rliteratur -->
         <?php echo get_partial('informationobject/notes', $publicationNotesComponent->getVarHolder()->getAll()) ?>
 
       </fieldset> <!-- /#alliedMaterialsArea -->
@@ -143,7 +143,7 @@
 
         <?php echo $form->descriptionIdentifier //=bearbeitering_bearbeitungsdatum_KlarName_b
           ->help(__('Record a unique description identifier in accordance with local and/or national conventions. If the description is to be used internationally, record the code of the country in which the description was created in accordance with the latest version of ISO 3166 - Codes for the representation of names of countries. Where the creator of the description is an international organisation, give the organisational identifier in place of the country code.'))
-          ->label(__('Bearbeiter/in, Bearbeitungsdatum (z.B. „Maxime Mauriège“)'))
+          ->label(__('Bearbeiter/in, Bearbeitungsdatum (z.B. â€žMaxime MauriÃ¨geâ€œ)'))
           ->renderRow() ?>
 
         <?php echo render_field($form->revisionHistory //=verzeichnungsdatum_b
@@ -159,7 +159,7 @@
 
 <?php /*
       <?php echo render_field($form->ggf_weitere_projektspezifische_felder_wie_Ort_Absender_Empfaenger_Betreff_b
-          ->label(__('ggf. weitere projektspezifische Felder (Ort, Absender, Empfänger, Betreff)')), $resource) ?>
+          ->label(__('ggf. weitere projektspezifische Felder (Ort, Absender, EmpfÃ¤nger, Betreff)')), $resource) ?>
 /* ?>
 
 <!-- // /Bernhard 13.06.2014 -->
