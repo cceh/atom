@@ -26,9 +26,58 @@
 
 <?php end_slot() ?>
 
+<?php /* The entire carousel was added at a later stage, hardcoded here, completely adhering to Bootstrap 2.3.2 (which is used by this installation of AtoM by default. (see /vendor)).
+         Images should be chosen dynamically/automated, so that it is easy to service by non-IT staff later. */ ?>
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/dixit.jpg" alt="Köln 1">
+      <div class="carousel-caption">
+        <h4>Erstes Bild Label</h4>
+        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/burger.jpg" alt="Köln 2">
+      <div class="carousel-caption">
+        <h4>Zweites Bild Label</h4>
+        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/arachne.jpg" alt="Köln 3">
+      <div class="carousel-caption">
+        <h4>Drittes Bild Label</h4>
+        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/genderforum.jpg" alt="Köln 4">
+      <div class="carousel-caption">
+        <h4>Viertes Bild Label</h4>
+        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="top: 45%;"><div style="margin-top: 3px;">&lsaquo;</div></a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next" style="top: 45%;"><div style="margin-top: 3px;">&rsaquo;</div></a>
+</div>
+<?php /*
 <div class="page">
   <?php echo render_value($resource->getContent(array('cultureFallback' => true))) ?>
 </div>
+*/ ?>
+
 
 <?php if (SecurityCheck::hasPermission($sf_user, array('module' => 'staticpage', 'action' => 'update'))): ?>
   <?php slot('after-content') ?>
