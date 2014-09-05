@@ -26,52 +26,68 @@
 
 <?php end_slot() ?>
 
-<?php /* The entire carousel was added at a later stage, hardcoded here, completely adhering to Bootstrap 2.3.2 (which is used by this installation of AtoM by default. (see /vendor)).
-         Images should be chosen dynamically/automated, so that it is easy to service by non-IT staff later. */ ?>
+<?php /* The entire carousel implemented here completely adheres to Bootstrap 2.3.2 (which is used by this installation of AtoM by default. (see /vendor)).
+         The code looks up, what files other than txt-files reside in the folder images/slideshow. */ ?>
+<?php
+  function trim_value(&$value)
+  {
+    $value = trim($value);
+  }
+
+  // The code looks up, which non-txt-files reside in the folder images/slideshow.
+  // glob returns an array of filenames in the form of the string. (See error_log-function.)
+  $dir = "images/slideshow/*[^.txt]";
+  $images = glob($dir);
+  //error_log("image files: " . print_r($images, true), 3, "/home/vagrant/atom-2/BernhardError.log");
+  // Independently from how the files are sorted in the directory, they are sorted again here.
+  sort($images);
+  //error_log("image files sorted: " . print_r($images, true), 3, "/home/vagrant/atom-2/BernhardError.log");
+  // Label headings are specified in the textfile label_headings.txt. The headings for the different carousel-slides are delimited by new lines.
+  // Label headings are extracted from the file correctly, even if a lot of whitespace is sourrounding them.
+  $textfile = "images/slideshow/label_headings.txt";
+  $contents = file_get_contents($textfile);
+  $label_headings = explode("\n", $contents);
+  array_walk($label_headings, 'trim_value');
+  $label_headings = array_filter($label_headings, 'strlen' );
+  $label_headings = array_values($label_headings);
+  //error_log("headings: " . print_r($label_headings, true), 3, "/home/vagrant/atom-2/BernhardError.log");
+  // Same as above, only with label texts this time.
+  $textfile = "images/slideshow/label_texts.txt";
+  $contents = file_get_contents($textfile);
+  $label_texts = explode("\n", $contents);
+  array_walk($label_texts, 'trim_value');
+  $label_texts = array_filter( $label_texts, 'strlen' );
+  $label_texts = array_values($label_texts);
+  //error_log("texts: " . print_r($label_texts, true), 3, "/home/vagrant/atom-2/BernhardError.log");
+?>
+
 <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <?php for($i=0; $i < sizeof($images); $i++) { ?>
+      <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" <?php if($i==0) echo "class=\"active\"" ?>></li>
+    <?php } ?>
   </ol>
+
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item">
-      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/dixit.jpg" alt="Köln 1">
-      <div class="carousel-caption">
-        <h4>Erstes Bild Label</h4>
-        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/burger.jpg" alt="Köln 2">
-      <div class="carousel-caption">
-        <h4>Zweites Bild Label</h4>
-        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/arachne.jpg" alt="Köln 3">
-      <div class="carousel-caption">
-        <h4>Drittes Bild Label</h4>
-        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="http://cceh.uni-koeln.de/themes/danland/images/slideshows/genderforum.jpg" alt="Köln 4">
-      <div class="carousel-caption">
-        <h4>Viertes Bild Label</h4>
-        <p>Dies ist ein Blindtext. Er füllt nur Platz aus und bedeutet nur sich selbst.</p>
-      </div>
-    </div>
-
+    <?php for($i=0; $i < sizeof($images); $i++) { ?>
+        <div class="<?php if($i==0) echo ("active "); ?>item">
+          <img src="<?php echo ("/".$images[$i]); ?>" alt="<?php echo substr(strrchr($images[$i], "/"), 1); ?>" />
+          <div class="carousel-caption">
+           <h2><?php echo $label_headings[$i]; ?></h>
+           <p><?php echo $label_texts[$i]; ?></p>
+          </div>
+        </div>
+    <?php } ?>
   </div>
+
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="top: 45%;"><div style="margin-top: 3px;">&lsaquo;</div></a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next" style="top: 45%;"><div style="margin-top: 3px;">&rsaquo;</div></a>
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="top: 45%;">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next" style="top: 45%;">&rsaquo;</a>
 </div>
+<?php /* end of carousel */ ?>
+
+
 <?php /*
 <div class="page">
   <?php echo render_value($resource->getContent(array('cultureFallback' => true))) ?>
@@ -88,4 +104,3 @@
     </section>
   <?php end_slot() ?>
 <?php endif; ?>
-
