@@ -2,7 +2,7 @@
 
   <div id="user-menu">
 
-    <a class="top-item top-dropdown" data-toggle="dropdown" data-target="#" ><?php echo __('Log in') ?></a>
+    <a class="top-item top-dropdown" data-toggle="dropdown" data-target="#" ><div class="icon-arrow-down"></div>  <?php echo __('Log in') ?></a>
 
     <div class="top-dropdown-container">
 
@@ -41,6 +41,7 @@
   <div id="user-menu">
 
     <a class="top-item top-dropdown" data-toggle="dropdown" data-target="#" >
+      <div class="icon-arrow-down"></div>  
       <?php echo $sf_user->user->username ?>
     </a>
 
