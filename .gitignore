@@ -24,3 +24,9 @@
 
 # Transifex files
 .tx/i18n
+
+# MEA
+/images/slideshow/
+
+plugins/arDominionPlugin/css/min.css
+plugins/arArchivesCanadaPlugin/css/min.css
