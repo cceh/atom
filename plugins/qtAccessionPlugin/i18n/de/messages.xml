@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
 <xliff version="1.0">
-  <file source-language="EN" target-language="de" datatype="plaintext" original="messages" date="2013-10-03T11:52:22Z" product-name="messages">
+  <file source-language="EN" target-language="de" datatype="plaintext" original="messages" date="2014-09-19T08:03:37Z" product-name="messages">
     <header/>
     <body>
       <trans-unit id="1">
@@ -26,7 +26,7 @@
       </trans-unit>
       <trans-unit id="9">
         <source>Browse donor</source>
-        <target/>
+        <target>Stifter verwalten</target>
       </trans-unit>
       <trans-unit id="10">
         <source>Name</source>
@@ -130,7 +130,7 @@
       </trans-unit>
       <trans-unit id="39">
         <source>Date</source>
-        <target/>
+        <target>Datum</target>
       </trans-unit>
       <trans-unit id="40">
         <source>Description</source>
@@ -142,7 +142,7 @@
       </trans-unit>
       <trans-unit id="42">
         <source>Edit accession record</source>
-        <target/>
+        <target>Akzessionseintrag bearbeiten</target>
       </trans-unit>
       <trans-unit id="43">
         <source>Extent</source>
@@ -154,7 +154,7 @@
       </trans-unit>
       <trans-unit id="45">
         <source>Add new accession record</source>
-        <target/>
+        <target>Neuen Akzessionseintrag erstellen</target>
       </trans-unit>
       <trans-unit id="46">
         <source>Acquisition date - This is a mandatory element.</source>
@@ -170,7 +170,7 @@
       </trans-unit>
       <trans-unit id="50">
         <source>Browse accession</source>
-        <target/>
+        <target>Zugriff: Akzession</target>
       </trans-unit>
       <trans-unit id="51">
         <source>Search accession</source>
@@ -178,7 +178,7 @@
       </trans-unit>
       <trans-unit id="52">
         <source>Related donors</source>
-        <target/>
+        <target>Verbundene Stifter</target>
       </trans-unit>
       <trans-unit id="53">
         <source>Related donor record</source>
@@ -202,11 +202,11 @@
       </trans-unit>
       <trans-unit id="58">
         <source>Accession number</source>
-        <target/>
+        <target>Akzessionsnummer</target>
       </trans-unit>
       <trans-unit id="59">
         <source>Acquisition date</source>
-        <target/>
+        <target>Übernahmedatum</target>
       </trans-unit>
       <trans-unit id="61">
         <source>Location information</source>
@@ -214,15 +214,15 @@
       </trans-unit>
       <trans-unit id="62">
         <source>Donor/Transferring body area</source>
-        <target/>
+        <target>Stifter/übergebende Körperschaft</target>
       </trans-unit>
       <trans-unit id="63">
         <source>Administrative area</source>
-        <target/>
+        <target>Administrative Angaben</target>
       </trans-unit>
       <trans-unit id="64">
         <source>Creators</source>
-        <target/>
+        <target>Ersteller</target>
       </trans-unit>
       <trans-unit id="65">
         <source>Physical condition</source>
@@ -230,7 +230,7 @@
       </trans-unit>
       <trans-unit id="66">
         <source>Rights area</source>
-        <target/>
+        <target>Rechtliche Beschränkungen</target>
       </trans-unit>
       <trans-unit id="67">
         <source>View accession record</source>
@@ -250,11 +250,11 @@
       </trans-unit>
       <trans-unit id="72">
         <source>Acquisition type</source>
-        <target/>
+        <target>Übernahmetyp</target>
       </trans-unit>
       <trans-unit id="73">
         <source>Resource type</source>
-        <target/>
+        <target>Ressourcentyp</target>
       </trans-unit>
       <trans-unit id="74">
         <source>Title</source>
@@ -274,7 +274,7 @@
       </trans-unit>
       <trans-unit id="81">
         <source>Edit rights area</source>
-        <target/>
+        <target>Rechtebereich bearbeiten</target>
       </trans-unit>
       <trans-unit id="83">
         <source>Deaccession area</source>
@@ -362,7 +362,7 @@
       </trans-unit>
       <trans-unit id="105">
         <source>Appraisal, destruction and scheduling</source>
-        <target/>
+        <target>Zu Bewertung, Vernichtung und Terminierung</target>
       </trans-unit>
       <trans-unit id="106">
         <source>A description of the physical condition of the accession and if any preservation or special handling is required.</source>
@@ -374,7 +374,7 @@
       </trans-unit>
       <trans-unit id="108">
         <source>An indicator of the accessioning process.</source>
-        <target/>
+        <target>Indikator für den Akzessionierungsprozess</target>
       </trans-unit>
       <trans-unit id="109">
         <source>Indicates the priority the repository assigns to completing the processing of the accession.</source>
@@ -406,7 +406,7 @@
       </trans-unit>
       <trans-unit id="116">
         <source>Accession area</source>
-        <target/>
+        <target>Akzessionsbereich</target>
       </trans-unit>
       <trans-unit id="117">
         <source>Related accession(s)</source>
@@ -414,7 +414,7 @@
       </trans-unit>
       <trans-unit id="118">
         <source>Accruals</source>
-        <target/>
+        <target>Neuzugänge</target>
       </trans-unit>
       <trans-unit id="119">
         <source>Accrual to</source>
@@ -434,7 +434,7 @@
       </trans-unit>
       <trans-unit id="125">
         <source>%1% area</source>
-        <target/>
+        <target>%1%</target>
       </trans-unit>
       <trans-unit id="126">
         <source>Basic info</source>
