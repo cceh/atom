@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0">
-  <file source-language="EN" target-language="de" datatype="plaintext" original="messages" date="2013-10-03T11:52:23Z" product-name="messages">
+  <file source-language="EN" target-language="de" datatype="plaintext" original="messages" date="2014-09-19T07:54:27Z" product-name="messages">
     <body>
       <trans-unit id="8">
         <source>Title</source>
@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="51">
         <source>Context area</source>
-        <target>Zusammenhang</target>
+        <target>Kontext</target>
       </trans-unit>
       <trans-unit id="62">
         <source>Repository</source>
@@ -88,7 +88,7 @@
       </trans-unit>
       <trans-unit id="765">
         <source>Edit context area</source>
-        <target/>
+        <target>Kontextbereich bearbeiten</target>
       </trans-unit>
       <trans-unit id="799">
         <source>Rules or conventions</source>
@@ -100,11 +100,11 @@
       </trans-unit>
       <trans-unit id="817">
         <source>System of arrangement</source>
-        <target/>
+        <target>Sammlungslogik</target>
       </trans-unit>
       <trans-unit id="821">
         <source>Conditions governing reproduction</source>
-        <target/>
+        <target>Regelung für die Erstellung von Reproduktionen</target>
       </trans-unit>
       <trans-unit id="823">
         <source>Physical characteristics and technical requirements</source>
@@ -112,15 +112,15 @@
       </trans-unit>
       <trans-unit id="826">
         <source>Existence and location of originals</source>
-        <target/>
+        <target>Existenz und Aufbewahrung der Originale</target>
       </trans-unit>
       <trans-unit id="828">
         <source>Existence and location of copies</source>
-        <target/>
+        <target>Existenz und Aufbewahrung von Kopien </target>
       </trans-unit>
       <trans-unit id="830">
         <source>Related units of description</source>
-        <target/>
+        <target>Verwandte Beschreibungseinheiten</target>
       </trans-unit>
       <trans-unit id="895">
         <source>Untitled</source>
@@ -128,35 +128,35 @@
       </trans-unit>
       <trans-unit id="896">
         <source>This archival description, or one of its higher levels, %1%requires%2% at least one %3%creator%4%.</source>
-        <target/>
+        <target>Diese archivische Beschreibung oder eine ihr übergeordnete %1%erfordert%2% mindestens einen %3%Ersteller%4%.</target>
       </trans-unit>
       <trans-unit id="897">
         <source>%1%Date(s)%2% - are not consistent with %3%higher levels%2%.</source>
-        <target/>
+        <target>%1%Datum%2% - stimmt nicht mit Angaben auf %3%höherer Ebene%2% überein</target>
       </trans-unit>
       <trans-unit id="898">
         <source>%1%Date(s)%2% - This is a %3%mandatory%4% element.</source>
-        <target/>
+        <target>%1%Datum/Daten%2% -  Pflichtfeld</target>
       </trans-unit>
       <trans-unit id="899">
         <source>%1%Extent and medium%2% - This is a %3%mandatory%4% element.</source>
-        <target/>
+        <target>%1%Umfang und Medium%2% - %3%Pflichtfeld%4%.</target>
       </trans-unit>
       <trans-unit id="900">
         <source>%1%Identifier%2% - This is a %3%mandatory%4% element.</source>
-        <target/>
+        <target>%1%Kennung%2% - %3%Pflichtfeld%4%.</target>
       </trans-unit>
       <trans-unit id="901">
         <source>%1%Level of description%2% - This is a %3%mandatory%4% element.</source>
-        <target/>
+        <target>%1%Beschreibungsebene%2% - %3%Pflichtfeld%4%.</target>
       </trans-unit>
       <trans-unit id="902">
         <source>%1%Title%2% - This is a %3%mandatory%4% element.</source>
-        <target/>
+        <target>%1%Titel%2% -%3%Pflichtfeld%4%.</target>
       </trans-unit>
       <trans-unit id="903">
         <source>%1%Level of description%2% - Value "%value%" is not consistent with higher levels.</source>
-        <target/>
+        <target>%1%Beschreibungsebene%2% - Wert "%value%" stimmt  nicht mit übergeordneten Ebenen überein.</target>
       </trans-unit>
       <trans-unit id="905">
         <source>File list</source>
@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="912">
         <source>Content and structure area</source>
-        <target/>
+        <target>Inhalt und innere Ordnung</target>
       </trans-unit>
       <trans-unit id="913">
         <source>Edit content and structure area</source>
@@ -196,7 +196,7 @@
       </trans-unit>
       <trans-unit id="916">
         <source>Conditions of access and use area</source>
-        <target/>
+        <target>Zugangs- und Benutzungsbedingungen</target>
       </trans-unit>
       <trans-unit id="917">
         <source>Edit conditions of access and use area</source>
@@ -204,19 +204,19 @@
       </trans-unit>
       <trans-unit id="918">
         <source>Language of material</source>
-        <target/>
+        <target>Sprache der Archivalie</target>
       </trans-unit>
       <trans-unit id="919">
         <source>Script of material</source>
-        <target/>
+        <target>Schrift(system) des Materials</target>
       </trans-unit>
       <trans-unit id="920">
         <source>Finding aids</source>
-        <target/>
+        <target>Findmittel</target>
       </trans-unit>
       <trans-unit id="921">
         <source>Allied materials area</source>
-        <target/>
+        <target>Sachverwandte Unterlagen</target>
       </trans-unit>
       <trans-unit id="922">
         <source>Edit alied materials area</source>
@@ -228,27 +228,27 @@
       </trans-unit>
       <trans-unit id="924">
         <source>Notes area</source>
-        <target/>
+        <target>Anmerkungen</target>
       </trans-unit>
       <trans-unit id="925">
         <source>Edit notes area</source>
-        <target/>
+        <target>Notizbereich bearbeiten</target>
       </trans-unit>
       <trans-unit id="926">
         <source>Access points</source>
-        <target/>
+        <target>Zugriffspunkte</target>
       </trans-unit>
       <trans-unit id="927">
         <source>Edit access points</source>
-        <target/>
+        <target>Zugriffspunkte bearbeiten</target>
       </trans-unit>
       <trans-unit id="928">
         <source>Description control area</source>
-        <target/>
+        <target>Verzeichnungskontrolle</target>
       </trans-unit>
       <trans-unit id="929">
         <source>Edit description control area</source>
-        <target/>
+        <target>Verzeichnungskontrollbereich bearbeiten</target>
       </trans-unit>
       <trans-unit id="930">
         <source>Rules and/or conventions used</source>
@@ -280,11 +280,11 @@
       </trans-unit>
       <trans-unit id="942">
         <source>Name of creator(s)</source>
-        <target/>
+        <target>Name des Bestandsbildners/Erstellers</target>
       </trans-unit>
       <trans-unit id="943">
         <source>This archival description, or one of its higher levels, requires at least one creator.</source>
-        <target/>
+        <target>Für diese archivische Beschreibung selbst, oder für eine ihr übergeordnete Ebene, muss mindestens ein Ersteller angegeben werden. </target>
       </trans-unit>
       <trans-unit id="953">
         <source>Indicate any important physical conditions, such as preservation requirements, that affect the use of the unit of description. Note any software and/or hardware required to access the unit of description.</source>
@@ -292,7 +292,7 @@
       </trans-unit>
       <trans-unit id="962">
         <source>Add new archival description</source>
-        <target/>
+        <target>Neue archivische Beschreibung erstellen</target>
       </trans-unit>
       <trans-unit id="963">
         <source>Edit %1%</source>
@@ -324,7 +324,7 @@
       </trans-unit>
       <trans-unit id="979">
         <source>Record the current status of the description, indicating whether it is a draft, finalized and/or revised or deleted.</source>
-        <target/>
+        <target>Status der Beschreibung: Entwurf, abgeschlossen, neu überarbeitet oder gelöscht.</target>
       </trans-unit>
       <trans-unit id="980">
         <source>Record whether the description consists of a minimal, partial or full level of detail in accordance with relevant international and/or national guidelines and/or rules.</source>
@@ -336,7 +336,7 @@
       </trans-unit>
       <trans-unit id="982">
         <source>Indicate the language(s) used to create the description of the archival material.</source>
-        <target/>
+        <target>Sprache der archivischen Beschreibung an.</target>
       </trans-unit>
       <trans-unit id="983">
         <source>Indicate the script(s) used to create the description of the archival material.</source>
@@ -412,7 +412,7 @@
       </trans-unit>
       <trans-unit id="1007">
         <source>Name access points (subjects)</source>
-        <target/>
+        <target>Zugriffspunkt (Namen)</target>
       </trans-unit>
       <trans-unit id="1008">
         <source>Record the international, national and/or local rules or conventions followed in preparing the description. (ISAD 3.7.2)</source>
@@ -436,7 +436,7 @@
       </trans-unit>
       <trans-unit id="1017">
         <source>Language and script notes</source>
-        <target/>
+        <target>Notizen zu Sprache und Schrift(system)</target>
       </trans-unit>
       <trans-unit id="1018">
         <source>Note any distinctive alphabets, scripts, symbol systems or abbreviations employed. (ISAD 3.4.3)</source>
@@ -464,7 +464,7 @@
       </trans-unit>
       <trans-unit id="1024">
         <source>"Identify and record the date(s) of the unit of description. Identify the type of date given. Record as a single date or a range of dates as appropriate.” (ISAD 3.1.3). The Date display field can be used to enter free-text date information, including typographical marks to express approximation, uncertainty, or qualification. Use the start and end fields to make the dates searchable. Do not use any qualifiers or typographical symbols to express uncertainty. Acceptable date formats: YYYYMMDD, YYYY-MM-DD, YYYY-MM, YYYY.</source>
-        <target/>
+        <target></target>
       </trans-unit>
       <trans-unit id="1025">
         <source>Record citations for any external sources used in the archival description (such as the Scope and Content, Archival History, or Notes fields).</source>
