@@ -1,7 +1,9 @@
 <div id="navContainer" class="container">
 
 	<div id="secLogo">
-		<?php echo image_tag('/images/MEA-Schriftzug-40.png', 'alt="MEA Logo"') ?>		
+		<a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>"
+			><?php echo image_tag('/images/MEA-Schriftzug-40.png', 'alt="MEA Logo"');
+			?></a>
 	</div>
 
 	<?php
