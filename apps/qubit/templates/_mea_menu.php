@@ -4,6 +4,15 @@
 		<?php echo image_tag('/images/MEA-Schriftzug-40.png', 'alt="MEA Logo"') ?>		
 	</div>
 
+	<?php
+		function static_page_link($page, $title) {
+			$opts = array('class' => 'menuItemLink');
+			$url = $_SERVER['SCRIPT_NAME'] . '/' . $page;
+
+			echo link_to($title, $url, $opts);
+		}
+	?>
+
 	<nav id="siteNavigation">
 		<ul class="list-inline" id="main-topics">
 			<li class="main-item">
@@ -11,16 +20,16 @@
 					<a class="main-item-link">Über Meister Eckhart</a>
 					<ul class="sub-topics">
 						<li>
-							<a href="#" class="menuItemLink">Sein Leben</a>
+							<?php static_page_link('sein-leben', 'Sein Leben'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Seine Werke</a>
+							<?php static_page_link('seine-werke', 'Seine Werke'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Chronologie</a>
+							<?php static_page_link('chronologie', 'Chronologie'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Diaporama</a>
+							<?php static_page_link('diaporama', 'Diaporama'); ?>
 						</li>
 					</ul>
 				</div>
@@ -30,16 +39,16 @@
 					<a class="main-item-link">Über das MEA</a>
 					<ul class="sub-topics">
 						<li>
-							<a href="#" class="menuItemLink">Geschichte</a>
+							<?php static_page_link('geschichte', 'Geschichte'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Team/Kontakt</a>
+							<?php static_page_link('team-kontakt', 'Team/Kontakt'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Bestandsübersicht</a>
+							<?php static_page_link('bestandsuebersicht', 'Bestandsübersicht'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Wissenschaftliche Erschließung</a>
+							<?php static_page_link('erschliessung', 'Wissenschaftliche Erschließung'); ?>
 						</li>
 					</ul>
 				</div>
@@ -49,16 +58,16 @@
 					<a class="main-item-link">Archivkatalog</a>
 					<ul class="sub-topics">
 						<li>
-							<a href="#" class="menuItemLink">Hilfe zur Benutzung</a>
+							<?php static_page_link('hilfe', 'Hilfe zur Benutzung'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Gesamtkatalog</a>
+							<?php static_page_link('gesamtkatalog', 'Gesamtkatalog'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Digitale Medien</a>
+							<?php static_page_link('digitale-medien', 'Digitale Medien'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Verzeichnisse</a>
+							<?php static_page_link('verzeichnisse', 'Verzeichnisse'); ?>
 						</li>
 					</ul>
 				</div>
@@ -68,13 +77,13 @@
 					<a class="main-item-link">Forschungskatalog</a>
 					<ul class="sub-topics">
 						<li>
-							<a href="#" class="menuItemLink">Zum MEA</a>
+							<?php static_page_link('zum-mea', 'Zum MEA'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Meister Eckharts Werke</a>
+							<?php static_page_link('meister-eckharts-werke', 'Meister Eckharts Werke'); ?>
 						</li>
 						<li>
-							<a href="#" class="menuItemLink">Meister-Eckhart-Forschung</a>
+							<?php static_page_link('meister-eckhart-forschung', 'Meister-Eckhart-Forschung'); ?>
 						</li>
 					</ul>
 				</div>
