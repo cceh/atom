@@ -10,8 +10,8 @@
     <?php echo __('Printed: %d%', array('%d%' => date('Y-m-d'))) ?>
   </div>
 
-  <div id="impressum" style="float: right;">
-    <a href="#">Impressum</a>
+  <div id="impressum">
+    <a href="<?php echo $_SERVER['SCRIPT_NAME'] . '/impressum' ?>">Impressum</a>
   </div>
 
 </footer>
