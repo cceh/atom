@@ -7,8 +7,8 @@
 	</div>
 
 	<?php
-		function static_page_link($page, $title) {
-			$opts = array('class' => 'menuItemLink');
+		function static_page_link($page, $title, $klass = 'menuItemLink') {
+			$opts = array('class' => $klass);
 			$url = $_SERVER['SCRIPT_NAME'] . '/' . $page;
 
 			echo link_to($title, $url, $opts);
@@ -19,7 +19,7 @@
 		<ul class="list-inline" id="main-topics">
 			<li class="main-item">
 				<div class="main-item-inner">
-					<a class="main-item-link">Über Meister Eckhart</a>
+					<?php static_page_link('ueber-meister-eckhart', 'Über Meister Eckhart', 'main-item-link'); ?>
 					<ul class="sub-topics">
 						<li>
 							<?php static_page_link('sein-leben', 'Sein Leben'); ?>
@@ -38,7 +38,7 @@
 			</li>
 			<li class="main-item">
 				<div class="main-item-inner">
-					<a class="main-item-link">Über das MEA</a>
+					<?php static_page_link('ueber-das-mea', 'Über das MEA', 'main-item-link'); ?>
 					<ul class="sub-topics">
 						<li>
 							<?php static_page_link('geschichte', 'Geschichte'); ?>
@@ -57,7 +57,7 @@
 			</li>
 			<li class="main-item">
 				<div class="main-item-inner">
-					<a class="main-item-link">Archivkatalog</a>
+					<?php static_page_link('archivkatalog', 'Archivkatalog', 'main-item-link'); ?>
 					<ul class="sub-topics">
 						<li>
 							<?php static_page_link('hilfe', 'Hilfe zur Benutzung'); ?>
@@ -76,7 +76,7 @@
 			</li>
 			<li class="main-item">
 				<div class="main-item-inner">
-					<a class="main-item-link">Forschungskatalog</a>
+					<?php static_page_link('Forschungskatalog', 'Forschungskatalog', 'main-item-link'); ?>
 					<ul class="sub-topics">
 						<li>
 							<?php static_page_link('zum-mea', 'Zum MEA'); ?>
