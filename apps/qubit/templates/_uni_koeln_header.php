@@ -1,3 +1,4 @@
+<?php $uri = explode('?', $sf_request->getUri())[0]; ?>
 <div class="container uni-style-block" id="headerSection">
 	<div id="metaNavigation">
 		<ul class="list-inline" id="languageSwitch">
@@ -6,10 +7,10 @@
 			</li>
 			<li>|</li>
 			<li>
-				<a href="">EN</a>
+				<a href="<?php echo $uri . '?sf_culture=en'; ?>">EN</a>
 			</li>
 			<li>
-				<a href="">DE</a>
+				<a href="<?php echo $uri . '?sf_culture=de'; ?>">DE</a>
 			</li>
 		</ul>
 	</div>
