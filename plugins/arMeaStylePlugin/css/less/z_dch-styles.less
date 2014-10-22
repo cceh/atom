@@ -295,4 +295,20 @@
             background-image:url('http://verwaltung.uni-koeln.de/common/skyline.png');
         }
     }
+
+    nav li {
+        display: inline-block;
+	padding-right: 0.8em;
+
+        &:before {
+            content: '» ';
+        }
+        &:first-child:before {
+            content: '';
+        }
+
+        &.this-page {
+            font-style: italic;
+        }
+    }
 }
