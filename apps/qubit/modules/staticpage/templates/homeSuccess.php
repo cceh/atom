@@ -71,8 +71,13 @@
   <!-- Carousel items -->
   <div class="carousel-inner">
     <?php for($i=0; $i < sizeof($images); $i++) { ?>
+         <?php
+             $image_path = str_replace('images/', '', $images[$i]);
+             $alt = $label_headings[$i];
+         ?>
+
         <div class="<?php if($i==0) echo ("active "); ?>item">
-          <img src="<?php echo ("/".$images[$i]); ?>" alt="<?php echo substr(strrchr($images[$i], "/"), 1); ?>" />
+	  <?php echo image_tag($image_path, array('alt' => $alt)); ?>
           <div class="carousel-caption">
            <h2><?php echo $label_headings[$i]; ?></h>
            <p><?php echo $label_texts[$i]; ?></p>
