@@ -246,7 +246,7 @@ QubitSetting:
     deleteable: 0
     source_culture: en
     value:
-      de: 'Bestände (?)'
+      de: Bestände
       en: Holdings
       es: Fondos
       fa: دربرگيرندگي
