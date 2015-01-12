@@ -1304,6 +1304,7 @@ QubitMenu:
       de: Über
       de-CH: Über
       el: Σχετικά
+      de: 'Über das Archiv'
       en: About
       es: Acerca
       eu: Buruz
@@ -1687,7 +1688,7 @@ QubitMenu:
       ca: 'Objectes digitals'
       ca@valencia: 'Objectes digitals'
       cy: 'Gwrthrychau digidol'
-      de: 'Digitales Objekt'
+      de: 'Digitale Objekte'
       de-CH: 'Digitales Objekt'
       el: 'Ψηφιακά αντικείμενα'
       en: 'Digital objects'
@@ -1723,7 +1724,7 @@ QubitMenu:
       ca: 'Elements públics'
       ca@valencia: 'Elements visibles'
       cy: 'Elfennau gweladwy'
-      de: 'Sichtbare Elemente'
+      de: 'Sichtbarkeit von Feldern'
       de-CH: 'Sichtbare Elemente'
       el: 'Ορατά στοιχεία'
       en: 'Visible elements'

@@ -8453,7 +8453,7 @@ QubitTerm:
     source_culture: en
     code: mea
     name:
-      de: 'MEA'
+      de: MEA
       en: 'MEA, inspired by ISAD(G), 2nd ed.'
   QubitTerm_template_isad:
     taxonomy_id: 70
