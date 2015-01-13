@@ -64,7 +64,7 @@
       </trans-unit>
       <trans-unit id="120">
         <source>Identifier</source>
-        <target>Signatur</target>
+        <target>ID</target>
       </trans-unit>
       <trans-unit id="207">
         <source>Type</source>
