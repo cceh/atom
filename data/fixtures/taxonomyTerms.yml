@@ -2421,7 +2421,7 @@ QubitTerm:
     parent_id: QubitTerm_110
     source_culture: en
     name:
-      de: Akt
+      de: Akte
       en: File
       es: 'Unidad documental compuesta'
       fr: Dossier
@@ -3497,6 +3497,7 @@ QubitTerm:
     parent_id: QubitTerm_110
     source_culture: en
     name:
+      de: Teil
       en: Part
       es: Parte
       fr: Partiellement
