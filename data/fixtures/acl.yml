@@ -8,7 +8,7 @@ QubitAclGroup:
       ca: anònim
       ca@valencia: anònim
       cy: anhysbys
-      de: anonym
+      de: 'Besucher (nicht eingeloggt)'
       de-CH: anonym
       el: ανώνυμος
       en: anonymous
@@ -39,7 +39,7 @@ QubitAclGroup:
       ca: autenticat
       ca@valencia: autenticat
       cy: dilysedig
-      de: authentifiziert
+      de: 'Besucher (eingeloggt)'
       de-CH: authentifiziert
       el: επικυρωμένα
       en: authenticated
@@ -99,7 +99,7 @@ QubitAclGroup:
       ca: editor
       ca@valencia: editor
       cy: golygydd
-      de: Herausgeber
+      de: 'Bearbeiter (volle Rechte)'
       de-CH: Herausgeber
       el: εκδότης
       en: editor
@@ -129,7 +129,7 @@ QubitAclGroup:
       ca: col·laborador
       ca@valencia: contribuïdor
       cy: cyfrannwr
-      de: Beitragender
+      de: 'Bearbeiter (eingeschränkte Rechte)'
       de-CH: Beitragender
       en: contributor
       es: contribuidor
