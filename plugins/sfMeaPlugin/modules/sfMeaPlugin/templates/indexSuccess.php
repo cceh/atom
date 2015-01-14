@@ -6,8 +6,6 @@
 
 <?php slot('title') ?>
 
-<h4><font color="green">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/indexSuccess.php</font></h4>
-
   <h1><?php echo render_title($isad) ?></h1>
 
   <?php echo get_partial('informationobject/printPreviewBar', array('resource' => $resource)) ?>
@@ -350,4 +348,3 @@
 <?php slot('after-content') ?>
   <?php echo get_partial('informationobject/actions', array('resource' => $resource)) ?>
 <?php end_slot() ?>
-<h4><font color="red">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/indexSuccess.php</font></h4>
