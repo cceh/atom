@@ -2,7 +2,6 @@
 <?php $sf_response->addJavaScript('multiDelete') ?>
 
 <div class="section">
-<h4><font color="green">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/_event.php</font></h4>
 
   <h3><?php echo __('Date(s)') ?> <span class="form-required" title="<?php echo __('This is a mandatory element.') ?>">*</span></h3>
 
@@ -80,4 +79,3 @@
   </div>
 
 </div>
-<h4><font color="red">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/_event.php</font></h4>
