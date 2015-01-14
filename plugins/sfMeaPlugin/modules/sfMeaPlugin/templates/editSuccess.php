@@ -11,7 +11,6 @@
 <?php end_slot() ?>
 
 <?php slot('title') ?>
-<h4><font color="green">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/editSuccess.php</font></h4>
 <?php echo $funktioniert_es ?>
   <?php if (isset($sf_request->source)): ?>
     <div class="messages status">
@@ -348,7 +347,6 @@
     <?php echo get_partial('informationobject/editActions', array('resource' => $resource)) ?>
 
   </form>
-<h4><font color="red">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/editSuccess.php</font></h4>
 
 <?php end_slot() ?>
 

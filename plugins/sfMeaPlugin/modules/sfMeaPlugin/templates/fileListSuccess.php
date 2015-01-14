@@ -1,4 +1,3 @@
-<h4><font color="green">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/fileListSuccess.php</font></h4>
 <h1><?php echo __('File list') ?></h1>
 
 <?php echo get_partial('default/breadcrumb', array('objects' => $resource->ancestors->andSelf())) ?>
@@ -43,4 +42,3 @@
 </table>
 
 <?php echo get_partial('default/pager', array('pager' => $pager)) ?>
-<h4><font color="red">plugins/sfMeaPlugin/modules/sfMeaPlugin/templates/fileListSuccess.php</font></h4>
