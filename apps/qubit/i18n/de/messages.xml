@@ -720,7 +720,7 @@
       </trans-unit>
       <trans-unit id="a7ca8b9a69b16030c11c898c78bafb9e801d384c">
         <source>Digital objects</source>
-        <target>Digitales Objekt</target>
+        <target>Digitale Objekte</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/informationobject/templates/multiFileUploadSuccess.php</note>
       </trans-unit>
       <trans-unit id="7ba52a7256660fcb753fc9900913da818132a682">
@@ -1413,7 +1413,7 @@
       <trans-unit id="88ac2cf7230bd7f626ef49e4e5c391c6fb6b620e">
         <source>Most recent</source>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/informationobject/templates/browseSuccess.php</note>
-        <target>Datum (absteigend)</target>
+        <target>Letzte Änderung</target>
       </trans-unit>
       <trans-unit id="76cdb950721642b6b8596d36d5a39f7705028b99">
         <source>Move</source>
@@ -1733,7 +1733,7 @@
       <trans-unit id="ff4fc0276e960c348647b647235f68200887c9d2">
         <source>Profile</source>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/menu/templates/_userMenu.php</note>
-        <target>Nutzerprofil</target>
+        <target>Benutzerprofil</target>
       </trans-unit>
       <trans-unit id="e9da9b827e60dc37063ef8b128c7d0534691727b">
         <source>Provide a brief description of the menu and it's purpose.</source>
