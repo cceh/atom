@@ -224,18 +224,22 @@
 </section> <!-- /section#alliedMaterialsArea -->
 
 <section id="notesArea">
+  <?php /* Notes are only shown to user when logged in as administrator or editor. Customized for Meister Eckhart Archiv.*/ ?>
+  <?php if ($sf_user->hasCredential(array('administrator', 'editor'), false)): ?>
 
-  <?php if (check_field_visibility('app_element_visibility_isad_notes_area')): ?>
-    <?php echo link_to_if(SecurityPriviliges::editCredentials($sf_user, 'informationObject'), '<h2>'.__('Notes area').'</h2>', array($resource, 'module' => 'informationobject', 'action' => 'edit'), array('anchor' => 'notesArea', 'title' => __('Edit notes area'))) ?>
-  <?php endif; ?>
+    <?php if (check_field_visibility('app_element_visibility_isad_notes_area')): ?>
+      <?php echo link_to_if(SecurityPriviliges::editCredentials($sf_user, 'informationObject'), '<h2>'.__('Notes area').'</h2>', array($resource, 'module' => 'informationobject', 'action' => 'edit'), array('anchor' => 'notesArea', 'title' => __('Edit notes area'))) ?>
+    <?php endif; ?>
 
-  <?php if (check_field_visibility('app_element_visibility_isad_notes')): ?>
-    <?php foreach ($resource->getNotesByType(array('noteTypeId' => QubitTerm::GENERAL_NOTE_ID)) as $item): ?>
-      <?php echo render_show(__('Note'), render_value($item->getContent(array('cultureFallback' => true)))) ?>
-    <?php endforeach; ?>
-  <?php endif; ?>
+    <?php if (check_field_visibility('app_element_visibility_isad_notes')): ?>
+      <?php foreach ($resource->getNotesByType(array('noteTypeId' => QubitTerm::GENERAL_NOTE_ID)) as $item): ?>
+        <?php echo render_show(__('Note'), render_value($item->getContent(array('cultureFallback' => true)))) ?>
+      <?php endforeach; ?>
+    <?php endif; ?>
 
-  <?php echo get_partial('informationobject/alternativeIdentifiersIndex', array('resource' => $resource)) ?>
+    <?php echo get_partial('informationobject/alternativeIdentifiersIndex', array('resource' => $resource)) ?>
+
+  <?php endif;  ?>
 
 </section> <!-- /section#notesArea -->
 
