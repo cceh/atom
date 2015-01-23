@@ -1343,7 +1343,7 @@ class arElasticSearchInformationObjectPdo
     }
 
     // Notes
-    if (null !== $termId = $this->getTermIdByNameAndTaxonomy('General note', QubitTaxonomy::RAD_NOTE_ID))
+    if (null !== $termId = $this->getTermIdByNameAndTaxonomy('General note', QubitTaxonomy::NOTE_TYPE_ID)) // Meister Eckhart Archiv: changed RAD_NOTE_ID to NOTE_TYPE_ID here.
     {
       foreach ($this->getNotesByType($termId) as $item)
       {
