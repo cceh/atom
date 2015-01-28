@@ -374,6 +374,8 @@ class SearchAdvancedAction extends DefaultBrowseAction
           $queryField->setDefaultField('generalNotes.i18n.%s.content');
           $queryField->setDefaultOperator('OR');
 
+          break;
+
         case '_all':
         default:
           $queryField = new \Elastica\Query\QueryString($query);
