@@ -379,7 +379,7 @@ class SearchAdvancedAction extends DefaultBrowseAction
           /* Bernhard Search Note */
         case 'note':
           $queryField = new \Elastica\Query\QueryString($query);
-          $queryField->setDefaultField('generalNotes.i18n.%s.content');
+          $queryField->setFields(arElasticSearchPluginUtil::getI18nFieldNames('generalNotes.i18n.%s.content'));
           $queryField->setDefaultOperator('OR');
 
           break;
