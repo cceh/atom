@@ -31,21 +31,25 @@
         </div>
 
         <?php if (isset($repository)): ?>
+          <!--
           <div>
             <label>
               <input name="repos" checked="checked" type="radio" value="<?php echo $repository->id ?>" data-placeholder="<?php echo __('Search %1%', array('%1%' => strip_markdown($repository))) ?>"/>
               <?php echo __('Search <span>%1%</span>', array('%1%' => render_title($repository))) ?>
             </label>
-          </div>
+	  </div>
+          -->
         <?php endif; ?>
 
         <?php if (isset($altRepository)): ?>
+          <!--
           <div>
             <label>
               <input name="repos" type="radio" value="<?php echo $altRepository->id ?>" data-placeholder="<?php echo __('Search %1%', array('%1%' => strip_markdown($altRepository))) ?>"/>
               <?php echo __('Search <span>%1%</span>', array('%1%' => render_title($altRepository))) ?>
             </label>
           </div>
+          -->
         <?php endif; ?>
 
       <?php endif; ?>
