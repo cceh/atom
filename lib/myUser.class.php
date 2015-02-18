@@ -210,6 +210,13 @@ class myUser extends sfBasicSecurityUser implements Zend_Acl_Role_Interface
     return $this->hasGroup(QubitAclGroup::ADMINISTRATOR_ID);
   }
 
+  // Bernhard
+  public function isEditor()
+  {
+    return $this->hasGroup(QubitAclGroup::EDITOR_ID);
+  }
+  // /Bernhard
+
   public function isAuthenticated()
   {
     if (sfConfig::get('app_read_only', false))
