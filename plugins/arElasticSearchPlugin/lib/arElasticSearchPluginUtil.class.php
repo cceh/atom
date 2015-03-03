@@ -57,7 +57,7 @@ class arElasticSearchPluginUtil
     }
     */
     // Bernhard; Set _all for editors and administrators
-    if (sfContext::getInstance()->user->isAdministrator() || sfContext::getInstance()->user->isEditor())
+    if (sfContext::getInstance()->user->isAdministrator() || sfContext::getInstance()->user->isEditor() || sfContext::getInstance()->user->isContributor())
     {
       $query->setDefaultField('_all');
     }
