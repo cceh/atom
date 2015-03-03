@@ -36,7 +36,9 @@
               <option value="identifier"<?php echo $item['field'] == 'identifier' ? ' selected="selected"' : '' ?>><?php echo __('Identifier') ?></option>
               <option value="referenceCode"<?php echo $item['field'] == 'referenceCode' ? ' selected="selected"' : '' ?>><?php echo __('Reference code') ?></option>
               <?php /* Bernhard Search Note*/ ?>
-              <option value="note"<?php echo $item['field'] == 'note' ? 'selected="selected"' : '' ?>><?php echo __('General note(s)') ?></option>
+              <?php if ($sf_user->hasCredential(array('administrator', 'editor'), false)): ?>
+                <?php echo '<option value="note"' ?><?php echo $item['field'] == 'note' ? ' selected="selected"' : '' ?><?php echo '>' ?><?php echo __('General note(s)') ?><?php echo '</option>' ?>
+              <?php endif; ?>
             </select>
           </div>
         </div>
@@ -79,8 +81,9 @@
           <option value="identifier"><?php echo __('Identifier') ?></option>
           <option value="referenceCode"><?php echo __('Reference code') ?></option>
           <?php /* Bernhard Search Note */ ?>
-          <option value="note"><?php echo __('General note(s)') ?></option>
-
+          <?php if ($sf_user->hasCredential(array('administrator', 'editor'), false)): ?>
+            <?php echo '<option value="note">' ?><?php echo __('General note(s)') ?><?php echo '</option>' ?>
+          <?php endif; ?>
         </select>
       </div>
     </div>

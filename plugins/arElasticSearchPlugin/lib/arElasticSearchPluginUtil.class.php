@@ -49,12 +49,51 @@ class arElasticSearchPluginUtil
    */
   public static function setAllFields(\Elastica\Query\QueryString $query, $options = array())
   {
+    /*
     // Set _all for authenticated users
     if (sfContext::getInstance()->user->isAuthenticated())
     {
       $query->setDefaultField('_all');
     }
-    else
+    */
+    // Bernhard; Set _all for editors and administrators
+    if (sfContext::getInstance()->user->isAdministrator() || sfContext::getInstance()->user->isEditor())
+    {
+      $query->setDefaultField('_all');
+    }
+    // Bernhard; Set _all minus generalNotes for authenticated users
+    else if (sfContext::getInstance()->user->isAuthenticated())
+    {
+      // Get available cultures
+      $cultures = array();
+      foreach (QubitSetting::getByScope('i18n_languages') as $setting)
+      {
+        $cultures[] = $setting->getValue(array('sourceCulture' => true));
+      }
+
+      $allFields = $filteredFields = array();
+
+      if (!isset($options['type']))
+      {
+        $options['type'] = 'informationObject';
+      }
+
+      // Load ES mappings
+      $mappings = arElasticSearchPlugin::loadMappings();
+
+      // Get all string fields included in _all for the type and actual culture
+      if (isset($mappings[$options['type']]))
+      {
+        $allFields = self::getAllObjectStringFields($mappings[$options['type']], $prefix = '', $cultures);
+      }
+
+      // remove generalNotes fields from $allFields
+      $excluded_generalNotes_bernhard = arElasticSearchPluginUtil::getI18nFieldNames('generalNotes.i18n.%s.content');
+      $filteredFields = array_diff($allFields, $excluded_generalNotes_bernhard);
+
+      $query->setFields(array_values($filteredFields));
+    } // /Bernhard
+    else // the public
     {
       // Get available cultures
       $cultures = array();
@@ -161,6 +200,11 @@ class arElasticSearchPluginUtil
 
       // Remove hidden fields from ES mapping fields
       $filteredFields = array_diff($allFields, $hiddenFields);
+
+      // Bernhard; excluding generalNotes from the search results, too
+      $excluded_generalNotes_bernhard = arElasticSearchPluginUtil::getI18nFieldNames('generalNotes.i18n.%s.content');
+      $filteredFields = array_diff($filteredFields, $excluded_generalNotes_bernhard);
+      // /Bernhard
 
       // Set filtered fields for the query (use array_values() because array_diff() adds keys)
       $query->setFields(array_values($filteredFields));
