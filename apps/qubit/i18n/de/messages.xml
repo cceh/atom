@@ -670,6 +670,11 @@
         <target>Allgemeiner Begriff</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/term/templates/editSuccess.php</note>
       </trans-unit>
+      <trans-unit id="2c9abb550a6c7b975efff8480d8b9587dc7366fa">
+        <source>Browse %1%:</source>
+        <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/taxonomy/templates/indexSuccess.php</note>
+        <target>Zugriff auf %1%:</target>
+      </trans-unit>
       <trans-unit id="e976270d20611abafc2f1f0b8664f8ff54c9ba05">
         <source>Browse %1% %2%</source>
         <target>Durchsuche %1% %2%</target>
@@ -3067,6 +3072,7 @@
         <source>Show all</source>
         <target>Zeige alle</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/digitalobject/templates/_imageflow.php</note>
+	<target>Alle anzeigen</target>
       </trans-unit>
       <trans-unit id="2db77301d20d59162ed5c3601f4090bae928b879">
         <source>Show inactive only</source>
