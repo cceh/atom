@@ -401,6 +401,7 @@ QubitSetting:
     deleteable: 0
     source_culture: en
     value:
+      de: 'Treffer einschränken mit:'
       en: 'Narrow your results by:'
       es: 'Restringir resultados por:'
       fr: 'Affiner les résultats par :'
