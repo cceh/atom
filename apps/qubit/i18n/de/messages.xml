@@ -1133,6 +1133,7 @@
         <source>Creation</source>
         <target>Anlage</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/search/actions/descriptionUpdatesAction.class.php</note>
+        <target>Erstellung</target>
       </trans-unit>
       <trans-unit id="c175379b0389b2d6057b0b7db996720f1fb92fc7">
         <source>Creation date</source>
@@ -4208,6 +4209,7 @@
         <source>Show all</source>
         <target>Zeige alle</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/digitalobject/templates/_imageflow.php</note>
+	<target>Alle anzeigen</target>
       </trans-unit>
       <trans-unit id="8a45f7d136057785b07fe927d8f9d99fcc10b390">
         <source>Show available drafts notification upon user login</source>
