@@ -30,9 +30,6 @@
 						<li>
 							<?php static_page_link('chronologie', 'Chronologie'); ?>
 						</li>
-						<li>
-							<?php static_page_link('diaporama', 'Diaporama'); ?>
-						</li>
 					</ul>
 				</div>
 			</li>
@@ -76,16 +73,16 @@
 			</li>
 			<li class="main-item">
 				<div class="main-item-inner">
-					<?php static_page_link('Forschungskatalog', 'Forschungskatalog', 'main-item-link'); ?>
+					<?php static_page_link('bibliothek', 'Bibliothek', 'main-item-link'); ?>
 					<ul class="sub-topics">
 						<li>
-							<?php static_page_link('zum-mea', 'Zum MEA'); ?>
+							<?php static_page_link('literatur-zum-mea', 'Literatur zum Meister-Eckhart-Archiv'); ?>
 						</li>
 						<li>
 							<?php static_page_link('meister-eckharts-werke', 'Meister Eckharts Werke'); ?>
 						</li>
 						<li>
-							<?php static_page_link('meister-eckhart-forschung', 'Meister-Eckhart-Forschung'); ?>
+							<?php static_page_link('sekundaerliteratur', 'Sekundärliteratur über Meister Eckhart'); ?>
 						</li>
 					</ul>
 				</div>
