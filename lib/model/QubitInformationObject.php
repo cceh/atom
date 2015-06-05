@@ -229,25 +229,7 @@ class QubitInformationObject extends BaseInformationObject
   {
     if (!isset($this->slug))
     {
-      $sep = sfConfig::get('app_separator_character', '-');
-
-      $iobj = $this;
-      $id = $iobj->identifier;
-
-      $i = 0;
-      while ($iobj->id != QubitInformationObject::ROOT_ID && $iobj->parentId != QubitInformationObject::ROOT_ID)
-      {
-        $i = $i + 1;
-          if ($i >= 20) {
-          error_log('Too many parent objects. Breaking.');
-          break;
-        }
-
-        $iobj = QubitInformationObject::getById($iobj->parentId);
-        $id = $iobj->identifier . $sep . $id;
-      }
-
-      $this->slug = QubitSlug::slugify($id);
+      $this->slug = QubitSlug::slugify($this->__get('title', array('sourceCulture' => true)));
     }
 
     return parent::insert($connection);
