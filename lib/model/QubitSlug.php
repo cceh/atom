@@ -46,26 +46,7 @@ class QubitSlug extends BaseSlug
 
   public static function slugify($slug)
   {
-    // Handle exotic characters gracefully
-    $slug = iconv('utf-8', 'ascii//TRANSLIT', $slug);
-
-    $slug = strtolower($slug);
-
-    // Remove apostrophes
-    $slug = preg_replace('/\'/', '', $slug);
-
-    // Allow only digits, letters, and dashes.  Replace sequences of other
-    // characters with dash
-    $slug = preg_replace('/[^0-9a-z]+/', '-', $slug);
-
-    // Drop (English) articles
-    $slug = "-$slug-";
-    $slug = str_replace('-a-', '-', $slug);
-    $slug = str_replace('-an-', '-', $slug);
-    $slug = str_replace('-the-', '-', $slug);
-
-    $slug = trim($slug, '-');
-
+    $slug = self::random();
     return $slug;
   }
 
