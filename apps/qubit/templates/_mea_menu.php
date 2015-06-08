@@ -1,7 +1,8 @@
 <div id="navContainer" class="container">
 
+	<?php $mea_slug = rtrim(file_get_contents("mea.slug", FILE_USE_INCLUDE_PATH)); ?>
 	<div id="secLogo">
-		<a href="<?php echo $_SERVER['SCRIPT_NAME'] . "/mea"; ?>"
+		<a href="<?php echo $_SERVER['SCRIPT_NAME'] . "/" . $mea_slug; ?>"
 			><?php echo image_tag('/images/MEA-Schriftzug-40.png', 'alt="MEA Logo"');
 			?></a>
 	</div>
