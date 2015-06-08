@@ -11,6 +11,8 @@
 /uploads/
 /build/
 /images/slideshow/
+/mea.slug
 
 plugins/arDominionPlugin/css/min.css
 plugins/arArchivesCanadaPlugin/css/min.css
+
