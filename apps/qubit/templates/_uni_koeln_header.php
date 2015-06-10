@@ -5,6 +5,7 @@
 			<li>
 				<a href="http://dch.uni-koeln.de">Data Center for the Humanities</a>
 			</li>
+<!--
 			<li>|</li>
 			<li>
 				<a href="<?php echo $uri . '?sf_culture=en'; ?>">EN</a>
@@ -12,6 +13,7 @@
 			<li>
 				<a href="<?php echo $uri . '?sf_culture=de'; ?>">DE</a>
 			</li>
+-->
 		</ul>
 	</div>
 	<div id="mainLogo">
