@@ -714,7 +714,7 @@ QubitTerm:
     id: 111
     source_culture: en
     name:
-      de: Anlage
+      de: Entstehung
       en: Creation
       es: Creación
       fr: Production
@@ -811,7 +811,7 @@ QubitTerm:
     id: 118
     source_culture: en
     name:
-      de: Bildung
+      de: Zusammenstellung
       en: Accumulation
       es: Agregación
       fr: Accumulation
