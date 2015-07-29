@@ -1131,7 +1131,7 @@
       </trans-unit>
       <trans-unit id="e13e0554f557ba882751e261b5a60777b337bea6">
         <source>Creation</source>
-        <target>Anlage</target>
+        <target>Entstehung</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/search/actions/descriptionUpdatesAction.class.php</note>
         <target>Erstellung</target>
       </trans-unit>
