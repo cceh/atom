@@ -1010,6 +1010,7 @@
       <trans-unit id="56b1b4ae2973d57bb6522d81dd4f6a944302bfd6">
         <source>General note(s)</source>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/settings/templates/visibleElementsSuccess.php</note>
+        <target>Allgemeine Anmerkungen</target>
       </trans-unit>
       <trans-unit id="5f1184f7df96c5928092ad9c6b550699bf887826">
         <source>Global</source>
@@ -1093,7 +1094,7 @@
       </trans-unit>
       <trans-unit id="06b6ace8ca3f18249e8ba4ea9090c0f34564ce1c">
         <source>Identifier</source>
-        <target>Signatur</target>
+        <target>Kennung</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/informationobject/templates/_childLevels.php</note>
       </trans-unit>
       <trans-unit id="20d9c9c5fffabec39cefaf8e72e140a7cf144cba">
@@ -1315,7 +1316,7 @@
       </trans-unit>
       <trans-unit id="b058a9b22f579cab7ac16513a1de431a941a51e5">
         <source>Locality</source>
-        <target>Örtliche Lage</target>
+        <target>Ort</target>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/contactinformation/templates/_contactInformation.php</note>
       </trans-unit>
       <trans-unit id="d219c68101f532de10add2cf42fb9dbeca73d3be">
@@ -2107,7 +2108,7 @@
       <trans-unit id="50a279de829f2dc398ac2ac7c9367508ea4b5df5">
         <source>Show all</source>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/digitalobject/templates/_imageflow.php</note>
-	<target>Alle anzeigen</target>
+        <target>Alle anzeigen</target>
       </trans-unit>
       <trans-unit id="2db77301d20d59162ed5c3601f4090bae928b879">
         <source>Show inactive only</source>
@@ -2529,7 +2530,7 @@
       <trans-unit id="643362fb29023a8944451d93d031c135d317e58c">
         <source>Unique records</source>
         <note>https://github.com/artefactual/atom/blob/master/apps/qubit/modules/search/templates/_facetLanguage.php</note>
-	<target>Unterscheidbare Datensätze</target>
+        <target>Unterscheidbare Datensätze</target>
       </trans-unit>
       <trans-unit id="621521f9a8788695ec292cbec54d2792cfdf0a7d">
         <source>Untitled</source>
