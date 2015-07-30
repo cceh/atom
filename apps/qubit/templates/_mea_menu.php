@@ -39,10 +39,10 @@
 					<?php static_page_link('ueber-das-mea', 'Über das MEA', 'main-item-link'); ?>
 					<ul class="sub-topics">
 						<li>
-							<?php static_page_link('geschichte', 'Geschichte'); ?>
+							<?php static_page_link('team-kontakt', 'Team/Kontakt'); ?>
 						</li>
 						<li>
-							<?php static_page_link('team-kontakt', 'Team/Kontakt'); ?>
+							<?php static_page_link('geschichte', 'Geschichte'); ?>
 						</li>
 						<li>
 							<?php static_page_link('bestandsuebersicht', 'Bestandsübersicht'); ?>
