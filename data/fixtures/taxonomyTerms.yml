@@ -686,6 +686,7 @@ QubitTaxonomy:
     parent_id: QubitTaxonomy_root
     name:
       en: 'Thematic Area'
+      de: 'Themengebiet'
     note:
       en: 'These themes can assist in identifying major collecting areas, but should not be taken as comprehensive. Used as optional access point for ISDIAH repository records.'
   QubitTaxonomy_geographic_subregions:
@@ -694,6 +695,7 @@ QubitTaxonomy:
     parent_id: QubitTaxonomy_root
     name:
       en: 'Geographic Subregion'
+      de: 'Bundesland'
     note:
       en: 'Geographic subregions, based on local standards/common terminology if available. Used as optional access point for ISDIAH repository records in multi-repository databases.'
   QubitTaxonomy_dacs_note:
