@@ -11,6 +11,7 @@
   </div>
 
   <div id="impressum">
+    <a href="<?php echo $_SERVER['SCRIPT_NAME'] . '/sitemap' ?>">Sitemap</a>&nbsp;
     <a href="<?php echo $_SERVER['SCRIPT_NAME'] . '/impressum' ?>">Impressum</a>
   </div>
 
