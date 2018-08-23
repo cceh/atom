@@ -53,14 +53,18 @@ a:hover {
   }
 }
 
-// h1 multiline
+// Multiline headings
 
-.multiline {
+.multiline-header {
   margin-top: 18px;
-  line-height: 24px;
+  margin-bottom: 10px;
   img {
     float: left;
     margin-right: 8px;
+  }
+  h1 {
+    line-height: 24px;
+    margin-bottom: 0;
   }
   .sub {
     margin-top: 4px;
@@ -68,6 +72,23 @@ a:hover {
     display: block;
     line-height: 1;
   }
+}
+
+h1.multiline {
+  margin-top: 18px;
+  line-height: 24px;
+  .sub {
+    margin-top: 4px;
+    font-size: 12px;
+    display: block;
+    line-height: 1;
+  }
+}
+
+.h1-side {
+  text-align: right;
+  line-height: 24px;
+  margin-top: 18px;
 }
 
 // Open Sans is not happy forcing bold
@@ -192,7 +213,7 @@ th {
 
 .masonry {
 
-  margin-left: -4px;
+  margin-top: 20px;
 
   &.centered {
     margin: 0 auto;
@@ -274,6 +295,10 @@ th {
 
 .table {
   background-color: @white;
+
+  li {
+    list-style-position: inside;
+  }
 }
 
 .table thead th {
@@ -354,29 +379,40 @@ th {
   }
 
   // Content of .facet-header for desktops
-  p {
+  h3 {
     text-transform: lowercase;
     font-variant: small-caps;
     font-weight: normal;
     font-size: 20px;
+    line-height: 20px;
     margin: 0 0 0 0;
-    padding: 4px 4px 6px 6px;
     position: relative;
     cursor: pointer;
+  }
+
+  .facet-header a  {
+    text-decoration: none;
+    display: block;
+    padding: 4px 30px 6px 6px;
+    color: @gray;
+
+    &:hover {
+      color: @white;
+      background-color: @grayLight;
+      &:after {
+        color: @white;
+      }
+    }
+
     &:after {
       font-variant: normal;
       position: absolute;
       right: 8px;
+      top: 50%;
+      transform: translate(0, -50%);
       content: "\f107";
       font-family: "FontAwesome";
       color: @gray;
-    }
-    &:hover {
-      background-color: @grayLight;
-      color: @white;
-      &:after {
-        color: @white;
-      }
     }
   }
 
@@ -387,15 +423,13 @@ th {
   // Open state of a facet
   &.open {
 
-    // Change arrow icon
-    p:after {
-      content: "\f106";
-    }
-
-    .facet-header p {
+    .facet-header a  {
       background-color: @grayLight;
       color: @white;
+
+      // Change arrow icon
       &:after {
+        content: "\f106";
         color: @white;
       }
     }
@@ -424,6 +458,15 @@ th {
     padding: 2px 32px 2px 4px;
     .text-overflow();
     position: relative;
+
+    a > span {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
   }
 
   // Selected facet results
@@ -1007,9 +1050,10 @@ section .vcard:last-child > .field:last-child > div {
   &.has-preview {
 
     .search-result-preview {
+      float: left;
       display: inline-block;
       width: 17.8%;
-      margin-right: 10px;
+      margin-right: 2.2%;
       vertical-align: top;
       img {
         width: 100%;
@@ -1022,11 +1066,16 @@ section .vcard:last-child > .field:last-child > div {
     }
 
     .search-result-description {
-      width: 77%;
+      float: left;
+      width: 80%;
       display: inline-block;
       vertical-align: top;
     }
 
+  }
+
+  .search-result-description {
+    position: relative;
   }
 
   // Title
@@ -1044,6 +1093,7 @@ section .vcard:last-child > .field:last-child > div {
   .title {
     font-size: @baseFontSize * 1.25; // Cancel #content p
     margin-bottom: 0 !important;
+    margin-right: 25px !important;
     .text-overflow();
   }
 
@@ -1106,13 +1156,38 @@ section .vcard:last-child > .field:last-child > div {
   text-align: center;
   padding: @baseLineHeight;
 
+  .access-warning {
+    text-align: left;
+  }
+
 }
 
 // Horizontal space that takes the sort dropdown or a search bar in a browser
 
 .header-options {
   .clearfix();
-  margin-bottom: @baseLineHeight / 2;
+}
+
+// Links and sort options in the middle of the content
+
+.browse-options {
+  margin: 15px 0 10px 0;
+  display: inline-block;
+  width: 100%;
+
+  > a {
+    padding-right: 10px;
+
+    i {
+      font-size: 15px;
+      padding-right: 3px;
+      color: @grayLight;
+    }
+
+    &:hover > i {
+      color: @orange;
+    }
+  }
 }
 
 // Form
@@ -1128,6 +1203,7 @@ section .vcard:last-child > .field:last-child > div {
   display: inline-block;
   padding: 3px 20px 3px 6px;
   margin-right: 4px;
+  margin-bottom: 5px;
   max-width: 240px;
   .text-overflow();
   position: relative;
@@ -1153,13 +1229,22 @@ section .vcard:last-child > .field:last-child > div {
   padding-bottom: 10px;
 }
 
+// View header
+.view-header-label {
+  color: #666;
+}
+
 // Sort header
 
 #sort-header {
 
   float: right;
   text-align: right;
-  margin-top: 2px;
+
+  &.shared {
+    margin-top: 24px;
+    margin-left: 20px;
+  }
 
   label {
     float: left;
@@ -1169,12 +1254,12 @@ section .vcard:last-child > .field:last-child > div {
 
   // This is the item selected and shown, e.g. "Sort by: [Most recent]"
   .dropdown-selected {
-    color: @blue;
+    color: #0088cc;
     &:after {
       margin-left: 6px;
       margin-right: 4px;
       color: @gray;
-      content: "\f0d7"; // icon-caret-down
+      content: "\f0d7";
       font-family: 'FontAwesome';
     }
   }
@@ -1240,7 +1325,7 @@ section .vcard:last-child > .field:last-child > div {
       &:after {
         margin-left: 5px;
         color: @gray;
-        content: "\f0d7"; // icon-caret-down
+        content: "\f0d7";
         font-family: 'FontAwesome';
       }
     }
@@ -1497,10 +1582,123 @@ body.login #content {
 }
 
 div#wrapper.container{background-color: #fff;}
+// Settings » Permissions
+
+#premisAccessPermissionsArea {
+
+  table {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    th, td {
+      border: 1px solid #d9d9d9;
+    }
+  }
+
+  .premis-permissions-basis { }
 
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}  .premis-permissions-basis-value {
+    background-color: #eee;
+    select {
+      margin: 0px;
+    }
+    span {
+      text-align: center;
+      display: block;
+      font-style: italic;
+      color: #999;
+    }
+  }
+
+  .premis-permissions-mrt {
+    div {
+      display: table;
+      width: 100%;
+    }
+    ul {
+      display: table-row;
+      list-style-type: none;
+    }
+    li {
+      display: table-cell;
+      padding: 4px 0;
+      text-align: center;
+      input[type=checkbox] {
+        margin: 0;
+      }
+    }
+    .cbx {
+      background-color: @errorBackground;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      &.hover {
+        background-color: #eee;
+      }
+      &.cbx-checked {
+        background-color: @successBackground;
+      }
+    }
+  }
+
+  .premis-permissions-toggle {
+    text-align: right;
+    ul {
+      list-style-display: none;
+    }
+    li {
+      display: inline;
+    }
+  }
+
+  .btn-check-col {
+    margin-bottom: 0;
+  }
+
+}
+
+.copyright-statement-preview {
+  margin-top: 10px;
+}
+
+// Translation box
+
+.default-translation {
+  padding: 0.2em 0.4em;
+  margin: 0 0 1em 0;
+  color: #000000;
+  background: #FFFFE0;
+  border: 1px dashed #FFD700;
+}
+
+// Print preview bar
+
+#preview-message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background: #eee;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+  a {
+    float: right;
+  }
+
+  &+ .multiline-header {
+    margin-top: 45px;
+  }
 }
